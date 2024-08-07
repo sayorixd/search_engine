@@ -53,68 +53,84 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\user\Downloads\search_engine-main
+CMAKE_SOURCE_DIR = C:\Users\user\Downloads\search_engine\search_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\user\Downloads\search_engine-main\out\build\preset1
+CMAKE_BINARY_DIR = C:\Users\user\Downloads\search_engine\search_engine\out\build\preset1
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/search_engine.dir/all
-all: json-develop/all
+all: include/json-develop/all
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: json-develop/preinstall
+preinstall: include/json-develop/preinstall
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/search_engine.dir/clean
-clean: json-develop/clean
+clean: include/json-develop/clean
+clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory json-develop
+# Directory level rules for directory include/json-develop
 
 # Recursive "all" directory target.
-json-develop/all:
-.PHONY : json-develop/all
+include/json-develop/all:
+.PHONY : include/json-develop/all
 
 # Recursive "preinstall" directory target.
-json-develop/preinstall:
-.PHONY : json-develop/preinstall
+include/json-develop/preinstall:
+.PHONY : include/json-develop/preinstall
 
 # Recursive "clean" directory target.
-json-develop/clean:
-.PHONY : json-develop/clean
+include/json-develop/clean:
+.PHONY : include/json-develop/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/search_engine.dir
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/search_engine.dir/all
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/search_engine.dir/clean
+.PHONY : src/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/search_engine.dir
 
 # All Build rule for target.
-CMakeFiles/search_engine.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Downloads\search_engine-main\out\build\preset1\CMakeFiles --progress-num=1,2,3,4 "Built target search_engine"
-.PHONY : CMakeFiles/search_engine.dir/all
+src/CMakeFiles/search_engine.dir/all:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Downloads\search_engine\search_engine\out\build\preset1\CMakeFiles --progress-num=1,2,3,4,5 "Built target search_engine"
+.PHONY : src/CMakeFiles/search_engine.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/search_engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Downloads\search_engine-main\out\build\preset1\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/search_engine.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Downloads\search_engine-main\out\build\preset1\CMakeFiles 0
-.PHONY : CMakeFiles/search_engine.dir/rule
+src/CMakeFiles/search_engine.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Downloads\search_engine\search_engine\out\build\preset1\CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/search_engine.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Downloads\search_engine\search_engine\out\build\preset1\CMakeFiles 0
+.PHONY : src/CMakeFiles/search_engine.dir/rule
 
 # Convenience name for target.
-search_engine: CMakeFiles/search_engine.dir/rule
+search_engine: src/CMakeFiles/search_engine.dir/rule
 .PHONY : search_engine
 
 # clean rule for target.
-CMakeFiles/search_engine.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/clean
-.PHONY : CMakeFiles/search_engine.dir/clean
+src/CMakeFiles/search_engine.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/clean
+.PHONY : src/CMakeFiles/search_engine.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/user/Downloads/search_engine-main
+# Install script for directory: C:/Users/user/Downloads/search_engine/search_engine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/user/Downloads/search_engine-main/out/install/preset1")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/user/Downloads/search_engine/search_engine/out/install/preset1")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/user/Downloads/search_engine-main/out/build/preset1/json-develop/cmake_install.cmake")
+  include("C:/Users/user/Downloads/search_engine/search_engine/out/build/preset1/include/json-develop/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/user/Downloads/search_engine/search_engine/out/build/preset1/src/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -57,6 +62,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/user/Downloads/search_engine-main/out/build/preset1/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/user/Downloads/search_engine/search_engine/out/build/preset1/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

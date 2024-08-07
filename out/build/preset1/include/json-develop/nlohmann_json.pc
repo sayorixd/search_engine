@@ -1,0 +1,4 @@
+Name: nlohmann_json
+Description: JSON for Modern C++
+Version: 3.11.3
+Cflags: -IC:/Users/user/Downloads/search_engine/search_engine/out/install/preset1/include

@@ -34,15 +34,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake"
-  "C:/Users/user/Downloads/search_engine-main/CMakeLists.txt"
-  "C:/Users/user/Downloads/search_engine-main/json-develop/CMakeLists.txt"
-  "C:/Users/user/Downloads/search_engine-main/json-develop/cmake/config.cmake.in"
-  "C:/Users/user/Downloads/search_engine-main/json-develop/cmake/nlohmann_jsonConfigVersion.cmake.in"
-  "C:/Users/user/Downloads/search_engine-main/json-develop/cmake/pkg-config.pc.in"
+  "C:/Users/user/Downloads/search_engine/search_engine/CMakeLists.txt"
+  "C:/Users/user/Downloads/search_engine/search_engine/include/json-develop/CMakeLists.txt"
+  "C:/Users/user/Downloads/search_engine/search_engine/include/json-develop/cmake/config.cmake.in"
+  "C:/Users/user/Downloads/search_engine/search_engine/include/json-develop/cmake/nlohmann_jsonConfigVersion.cmake.in"
+  "C:/Users/user/Downloads/search_engine/search_engine/include/json-develop/cmake/pkg-config.pc.in"
   "CMakeFiles/3.30.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.1/CMakeRCCompiler.cmake"
   "CMakeFiles/3.30.1/CMakeSystem.cmake"
+  "C:/Users/user/Downloads/search_engine/search_engine/src/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -54,13 +55,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "json-develop/nlohmann_json.pc"
-  "json-develop/nlohmann_jsonConfigVersion.cmake"
-  "json-develop/nlohmann_jsonConfig.cmake"
-  "json-develop/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "include/json-develop/nlohmann_json.pc"
+  "include/json-develop/nlohmann_jsonConfigVersion.cmake"
+  "include/json-develop/nlohmann_jsonConfig.cmake"
+  "include/json-develop/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/search_engine.dir/DependInfo.cmake"
+  "src/CMakeFiles/search_engine.dir/DependInfo.cmake"
   )

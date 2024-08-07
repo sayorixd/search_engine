@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\user\Downloads\search_engine-main
+CMAKE_SOURCE_DIR = C:\Users\user\Downloads\search_engine\search_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\user\Downloads\search_engine-main\out\build\preset1
+CMAKE_BINARY_DIR = C:\Users\user\Downloads\search_engine\search_engine\out\build\preset1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Downloads\search_engine-main\out\build\preset1\CMakeFiles C:\Users\user\Downloads\search_engine-main\out\build\preset1\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Downloads\search_engine\search_engine\out\build\preset1\CMakeFiles C:\Users\user\Downloads\search_engine\search_engine\out\build\preset1\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Downloads\search_engine-main\out\build\preset1\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Downloads\search_engine\search_engine\out\build\preset1\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -125,80 +125,8 @@ search_engine: cmake_check_build_system
 
 # fast build rule for target.
 search_engine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/build
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\search_engine.dir\build.make src/CMakeFiles/search_engine.dir/build
 .PHONY : search_engine/fast
-
-converter.obj: converter.cpp.obj
-.PHONY : converter.obj
-
-# target to build an object file
-converter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/converter.cpp.obj
-.PHONY : converter.cpp.obj
-
-converter.i: converter.cpp.i
-.PHONY : converter.i
-
-# target to preprocess a source file
-converter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/converter.cpp.i
-.PHONY : converter.cpp.i
-
-converter.s: converter.cpp.s
-.PHONY : converter.s
-
-# target to generate assembly for a file
-converter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/converter.cpp.s
-.PHONY : converter.cpp.s
-
-inverted_index.obj: inverted_index.cpp.obj
-.PHONY : inverted_index.obj
-
-# target to build an object file
-inverted_index.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/inverted_index.cpp.obj
-.PHONY : inverted_index.cpp.obj
-
-inverted_index.i: inverted_index.cpp.i
-.PHONY : inverted_index.i
-
-# target to preprocess a source file
-inverted_index.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/inverted_index.cpp.i
-.PHONY : inverted_index.cpp.i
-
-inverted_index.s: inverted_index.cpp.s
-.PHONY : inverted_index.s
-
-# target to generate assembly for a file
-inverted_index.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/inverted_index.cpp.s
-.PHONY : inverted_index.cpp.s
-
-main.obj: main.cpp.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -209,15 +137,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... search_engine
-	@echo ... converter.obj
-	@echo ... converter.i
-	@echo ... converter.s
-	@echo ... inverted_index.obj
-	@echo ... inverted_index.i
-	@echo ... inverted_index.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
 .PHONY : help
 
 
