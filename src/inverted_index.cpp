@@ -10,8 +10,6 @@ int InvertedIndex::GetDocumentCount() {
     return doc_count;
 }
 
-
-
 void InvertedIndex::UpdateDocumentBase(std::vector<std::string> input_docs) {
     size_t doc_id = 0;
     for(auto sentence : input_docs) {

@@ -36,6 +36,13 @@ public:
     }
 };
 
+class AnswersFileNotOpenException : public std::exception {
+public:
+    const char* what() const noexcept override {
+        return "Unable to open the answers.json file.";
+    }
+};
+
 class ConverterJSON {
 private:
     nlohmann::json config_json, requests_json, answers_json;
@@ -44,7 +51,7 @@ private:
     std::vector<std::string> docs, requests, answers;
     int document_count = 0;
 public:
-    ConverterJSON() = default;
+    ConverterJSON();
 
     std::vector<std::string> GetTextDocuments();
 
