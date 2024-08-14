@@ -3,15 +3,16 @@
 	{
 		"generator" : 
 		{
-			"multiConfig" : false,
-			"name" : "MinGW Makefiles"
+			"multiConfig" : true,
+			"name" : "Visual Studio 17 2022",
+			"platform" : "x64"
 		},
 		"paths" : 
 		{
-			"cmake" : "C:/Program Files/CMake/bin/cmake.exe",
-			"cpack" : "C:/Program Files/CMake/bin/cpack.exe",
-			"ctest" : "C:/Program Files/CMake/bin/ctest.exe",
-			"root" : "C:/Program Files/CMake/share/cmake-3.30"
+			"cmake" : "C:/cmake-3.30.1-windows-x86_64/bin/cmake.exe",
+			"cpack" : "C:/cmake-3.30.1-windows-x86_64/bin/cpack.exe",
+			"ctest" : "C:/cmake-3.30.1-windows-x86_64/bin/ctest.exe",
+			"root" : "C:/cmake-3.30.1-windows-x86_64/share/cmake-3.30"
 		},
 		"version" : 
 		{
@@ -26,7 +27,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-bfd78c4558df72b67edd.json",
+			"jsonFile" : "codemodel-v2-3a8021b16d3d5d695ede.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +36,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-26159dae0f1275eb8ac6.json",
+			"jsonFile" : "cache-v2-bd358018bc89e6c57fd9.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +45,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-37b1bbb754161f4763be.json",
+			"jsonFile" : "cmakeFiles-v1-8de631a7b96be4fd1889.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +54,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-e719e28fe32911e094f8.json",
+			"jsonFile" : "toolchains-v1-a0ddaa8311840e0d77d5.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -90,7 +91,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-26159dae0f1275eb8ac6.json",
+						"jsonFile" : "cache-v2-bd358018bc89e6c57fd9.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -99,7 +100,7 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-bfd78c4558df72b67edd.json",
+						"jsonFile" : "codemodel-v2-3a8021b16d3d5d695ede.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
@@ -108,7 +109,7 @@
 						}
 					},
 					{
-						"jsonFile" : "toolchains-v1-e719e28fe32911e094f8.json",
+						"jsonFile" : "toolchains-v1-a0ddaa8311840e0d77d5.json",
 						"kind" : "toolchains",
 						"version" : 
 						{
@@ -117,7 +118,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-37b1bbb754161f4763be.json",
+						"jsonFile" : "cmakeFiles-v1-8de631a7b96be4fd1889.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{

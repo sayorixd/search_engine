@@ -1,14 +1,15 @@
 #include "converter.h"
 #include <iostream>
+#include <sstream>
 #include <fstream>
 #include <exception>
 #include <vector>
 #include "json-develop/single_include/nlohmann/json.hpp"
 
-ConverterJSON::ConverterJSON()
+ConverterJSON::ConverterJSON(std::filesystem::path _project_path) : project_path(_project_path)
 {
-
-    std::ifstream file("../../../../config.json");
+    std::filesystem::path p = _project_path;
+    std::ifstream file(p.append("config.json"));
     try
     {
         if (!file.is_open())
@@ -24,18 +25,24 @@ ConverterJSON::ConverterJSON()
         {
             throw ConfigIsEmptyException();
         }
+        config_file_open = true;
+
         name = config_json["config"]["name"];
         max_responses = config_json["config"]["max_responses"];
         for (auto &element : config_json["files"])
         {
             document_count++;
             std::string document_path = element;
-            document_path = "../../../../" + document_path;
-            std::ifstream in(document_path);
+            p = document_path;
+            if(p.is_relative()) {
+                p = _project_path;
+                p.append(document_path);
+            }
+            std::ifstream in(p);
+
             try
             {
-                if (!in.is_open())
-                {
+                if(!in.is_open()) {
                     throw DocMissingException();
                 }
                 std::stringstream buffer;
@@ -45,12 +52,14 @@ ConverterJSON::ConverterJSON()
             catch (const DocMissingException &e)
             {
                 std::cout << e.what() << std::endl;
+                std::cout << p << std::endl;
             }
         }
     }
     catch (const std::exception &e)
     {
         std::cout << e.what() << std::endl;
+        config_file_open = false;
     }
     file.close();
 }
@@ -69,7 +78,8 @@ std::vector<std::string> ConverterJSON::GetRequests()
 {
     if (requests.empty())
     {
-        std::ifstream file("../../../../requests.json");
+        std::filesystem::path p = project_path;
+        std::ifstream file(p.append("requests.json"));
         try
         {
             if (file.is_open())
@@ -96,7 +106,8 @@ std::vector<std::string> ConverterJSON::GetRequests()
 
 void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>> answers)
 {
-    std::ofstream out("../../../../answers.json");
+    std::filesystem::path p = project_path;
+    std::ofstream out(p.append("answers.json"));
     try
     {
         if (!out.is_open())
@@ -169,4 +180,8 @@ void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>> answers)
 int ConverterJSON::GetDocumentCount()
 {
     return document_count;
+}
+
+bool ConverterJSON::_config_file_open() {
+    return config_file_open;
 }

@@ -1,7 +1,4 @@
-C:/Users/user/Downloads/search_engine/search_engine/out/build/preset1/CMakeFiles/edit_cache.dir
-C:/Users/user/Downloads/search_engine/search_engine/out/build/preset1/CMakeFiles/rebuild_cache.dir
-C:/Users/user/Downloads/search_engine/search_engine/out/build/preset1/include/json-develop/CMakeFiles/edit_cache.dir
-C:/Users/user/Downloads/search_engine/search_engine/out/build/preset1/include/json-develop/CMakeFiles/rebuild_cache.dir
-C:/Users/user/Downloads/search_engine/search_engine/out/build/preset1/src/CMakeFiles/search_engine.dir
-C:/Users/user/Downloads/search_engine/search_engine/out/build/preset1/src/CMakeFiles/edit_cache.dir
-C:/Users/user/Downloads/search_engine/search_engine/out/build/preset1/src/CMakeFiles/rebuild_cache.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/CMakeFiles/ALL_BUILD.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/CMakeFiles/ZERO_CHECK.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/include/json-develop/CMakeFiles/ALL_BUILD.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/src/CMakeFiles/search_engine.dir

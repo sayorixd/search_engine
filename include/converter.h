@@ -1,4 +1,5 @@
 #pragma once
+#include <filesystem>
 #include <exception>
 #include <vector>
 #include "json-develop/single_include/nlohmann/json.hpp"
@@ -50,8 +51,10 @@ private:
     int max_responses;
     std::vector<std::string> docs, requests, answers;
     int document_count = 0;
+    bool config_file_open = false;
+    std::filesystem::path project_path;
 public:
-    ConverterJSON();
+    ConverterJSON(std::filesystem::path _project_path);
 
     std::vector<std::string> GetTextDocuments();
 
@@ -62,4 +65,6 @@ public:
     void putAnswers(std::vector<std::vector<RelativeIndex>> answers);
 
     int GetDocumentCount();
+
+    bool _config_file_open();
 };

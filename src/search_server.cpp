@@ -1,4 +1,5 @@
 #include "search_server.h"
+#include <sstream>
 #include <vector>
 #include <thread>
 #include <mutex>
