@@ -1,5 +1,30 @@
-C:/Users/user/Downloads/search_engine-main/out/build/preset1/CMakeFiles/search_engine.dir
-C:/Users/user/Downloads/search_engine-main/out/build/preset1/CMakeFiles/edit_cache.dir
-C:/Users/user/Downloads/search_engine-main/out/build/preset1/CMakeFiles/rebuild_cache.dir
-C:/Users/user/Downloads/search_engine-main/out/build/preset1/json-develop/CMakeFiles/edit_cache.dir
-C:/Users/user/Downloads/search_engine-main/out/build/preset1/json-develop/CMakeFiles/rebuild_cache.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/CMakeFiles/Experimental.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/CMakeFiles/Nightly.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/CMakeFiles/Continuous.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/CMakeFiles/RUN_TESTS.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/CMakeFiles/INSTALL.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/CMakeFiles/ALL_BUILD.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/CMakeFiles/ZERO_CHECK.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/CMakeFiles/RUN_TESTS.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/CMakeFiles/INSTALL.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/googlemock/CMakeFiles/RUN_TESTS.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/googlemock/CMakeFiles/INSTALL.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/googlemock/CMakeFiles/ALL_BUILD.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/googletest/CMakeFiles/gtest.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/googletest/CMakeFiles/RUN_TESTS.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/googletest/CMakeFiles/INSTALL.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/_deps/googletest-build/googletest/CMakeFiles/ALL_BUILD.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/include/json-develop/CMakeFiles/RUN_TESTS.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/include/json-develop/CMakeFiles/INSTALL.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/include/json-develop/CMakeFiles/ALL_BUILD.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/src/CMakeFiles/search_engine.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/src/CMakeFiles/RUN_TESTS.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/src/CMakeFiles/INSTALL.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/GTests/CMakeFiles/GTests.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/GTests/CMakeFiles/RUN_TESTS.dir
+C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/GTests/CMakeFiles/INSTALL.dir
