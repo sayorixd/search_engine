@@ -1,5 +1,0 @@
-if(EXISTS "C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/GTests/GTests[1]_tests.cmake")
-  include("C:/Users/galki/Downloads/search engine/search_engine/out/build/preset1/GTests/GTests[1]_tests.cmake")
-else()
-  add_test(GTests_NOT_BUILT GTests_NOT_BUILT)
-endif()
