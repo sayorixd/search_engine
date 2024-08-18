@@ -36,6 +36,7 @@ void InvertedIndex::UpdateDocumentBase(std::vector<std::string> input_docs) {
         }
         doc_id++;
     }
+    doc_count = input_docs.size();
 }
 
 std::vector<Entry> InvertedIndex::GetWordCount(const std::string& word) {

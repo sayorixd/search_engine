@@ -27,7 +27,7 @@ std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<s
     std::vector<std::thread> threads;
 
     for(int n=0; n<answers.size(); n++) {
-        threads.push_back(std::thread([this, queries_input, n, &answers, &mtx]() {
+        std::thread thread([this, queries_input, n, &answers, &mtx]() {
             auto query = queries_input[n];
             std::vector<size_t> absolute_relevance(_index.GetDocumentCount());
             for(auto &i : absolute_relevance) i = 0;
@@ -53,15 +53,24 @@ std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<s
                     answer.push_back({i, relative_relevance});
             }
             sort_vector(answer);
+            if(answer.size() > max_responses)
+                answer.resize(max_responses);
+            
             mtx.lock();
             answers[n] = answer;
             mtx.unlock();
-        }));
+        });
+        threads.push_back(std::move(thread));
     }
 
     for(auto &th : threads) {
-        th.join();
+        if(th.joinable()) 
+            th.join();
     }
 
     return answers;
+}
+
+void SearchServer::MaxResponses(int _max_responses) {
+    max_responses = _max_responses;
 }

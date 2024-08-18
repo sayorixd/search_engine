@@ -2,6 +2,9 @@
 #include "include/inverted_index.h"
 #include "include/search_server.h"
 #include <filesystem>
+#include <iostream>
+
+using namespace std;
 
 int main() {
     std::filesystem::path p = __FILE__;
@@ -11,10 +14,10 @@ int main() {
     if(c._config_file_open()) {
         InvertedIndex i;
         i.UpdateDocumentBase(c.GetTextDocuments());
-        i.DocumentCount(c.GetDocumentCount());
         SearchServer s(i);
+        s.MaxResponses(c.GetResponsesLimit());
         c.putAnswers(s.search(c.GetRequests()));
     }
-    
+
     return 0;
 }

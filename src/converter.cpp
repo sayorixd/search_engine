@@ -145,11 +145,11 @@ void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>> answers)
                             {
                                 i++;
                                 nlohmann::json j_map = R"(
-                        {
-                            "docid": 0,
-                            "rank": 0.001
-                        }
-                    )"_json;
+                                    {
+                                    "docid": 0,
+                                    "rank": 0.001
+                                    }
+                                )"_json;
                                 j_map["docid"] = t.doc_id;
                                 j_map["rank"] = t.rank;
                                 answers_json["answers"][response_name]["relevance"].push_back(j_map);
