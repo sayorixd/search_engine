@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 include(FetchContent)
 include(GoogleTest)
-include(CTest)
 
 FetchContent_Declare(
   googletest
